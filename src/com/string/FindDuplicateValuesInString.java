@@ -23,7 +23,7 @@ public class FindDuplicateValuesInString {
         System.out.println();
         System.out.println("=================");
 
-        /**
+        /*
          * Write the below code for to find the duplicate words from the String
          * **/
         // Print the duplicate words from the String
@@ -36,7 +36,7 @@ public class FindDuplicateValuesInString {
 
         //Logs for find the duplicate values from the List of Strings
         String response = listOfWords.stream().filter(l -> !values.add(l)).collect(Collectors.joining(" "));
-        System.out.println(response);;
+        System.out.println(response);
 
 
     }

@@ -23,29 +23,21 @@ public class FindDuplicateValuesInString {
         System.out.println();
         System.out.println("=================");
 
+        /**
+         * Write the below code for to find the duplicate words from the String
+         * **/
         // Print the duplicate words from the String
-
         String name = "hello world and will and jump here hello world";
-
-        List<String> findListOfStrings = getListOfStrings(name);
-        String response = printDuplicateWordsFromString(findListOfStrings);
-        System.out.println(response);
-
-/*
-        Set<String> v1 = new HashSet<>();
-        List<String> listOfStrings = getListOfStrings(name);
-        listOfStrings.stream().filter(l -> !v1.add(l)).forEach(System.out::println);
-*/
-
-    }
-
-    private static List<String> getListOfStrings(String name) {
-        return Arrays.stream(name.split(" ")).collect(Collectors.toList());
-    }
-
-    private static String printDuplicateWordsFromString(List<String> list) {
         Set<String> values = new HashSet<>();
-        return list.stream().filter(l -> !values.add(l)).collect(Collectors.joining(" "));
-    }
 
+        //convert that String words into List of Strings
+        List<String> listOfWords = Arrays.stream(name.split(" "))
+                .collect(Collectors.toList());
+
+        //Logs for find the duplicate values from the List of Strings
+        String response = listOfWords.stream().filter(l -> !values.add(l)).collect(Collectors.joining(" "));
+        System.out.println(response);;
+
+
+    }
 }

@@ -25,7 +25,7 @@ public class FindDuplicateValuesInString {
 
         /*
          * Write the below code for to find the duplicate words from the String
-         * **/
+         * */
         // Print the duplicate words from the String
         String name = "hello world and will and jump here hello world";
         Set<String> values = new HashSet<>();

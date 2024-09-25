@@ -1,6 +1,7 @@
 package com.collections;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class SortTheListObject {
@@ -14,7 +15,7 @@ public class SortTheListObject {
 
         System.out.println("Print the list of data in descending order");
         //logic for print the list of Strings in descending order
-        list.stream().sorted((l1,l2)->l2.compareTo(l1)).forEach(System.out::println);
+        list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 
     }
 }

@@ -12,7 +12,7 @@ public class RemoveDuplicateWordsFromString {
         String str = "Hello World and Hero and Hello India";
 
         //Created Set Object
-        Set<String> setValues = new HashSet<String>();
+        Set<String> setValues = new HashSet<>();
 
         //Convert that String words into List of String
         List<String> listOfStrings = Arrays.stream(str.split(" "))

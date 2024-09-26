@@ -3,14 +3,13 @@ package com.collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class SortMapObject {
 
     public static void main(String[] args) {
 
         //create mapData object
-        Map<String, String> mapData = new HashMap<String, String>();
+        Map<String, String> mapData = new HashMap<>();
         mapData.put("abc", "value3");
         mapData.put("xyz", "value1");
         mapData.put("lmn", "value6");
